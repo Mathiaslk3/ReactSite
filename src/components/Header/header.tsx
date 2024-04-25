@@ -13,9 +13,11 @@ export default function Header() {
     <nav>
         <ul>
             <BrowserRouter>
-            {content.map((item) => (
-                <Link key={item.titel} to={item.url}>{item.titel}</Link>
-            ))}
+            <li>
+                {content.map((item) => (
+                    <Link key={item.titel} to={item.url}>{item.titel}</Link>
+                ))}
+            </li>
             </BrowserRouter>
         </ul>
     </nav>
